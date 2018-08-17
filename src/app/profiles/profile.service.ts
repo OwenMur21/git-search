@@ -9,7 +9,7 @@ import {environment} from '../../environments/environment';
 })
 export class ProfileService {
 user: User;
-private username = 'owenmur21';
+// private username = 'owenmur21';
   constructor(private http: HttpClient) {
     this.user = new User (' ', ' ', ' ');
   }
@@ -22,7 +22,6 @@ private username = 'owenmur21';
 
 
   }
-
   const promise = new Promise((resolve, reject) => {
     this.http.get<ApiResponse>(environment.apiUrl + username + environment.apikey).toPromise().then(profile => {
 
@@ -33,10 +32,10 @@ private username = 'owenmur21';
 
         resolve();
     },
-    error => {
-            this.user.name = 'daneden';
-            reject(error);
-        }
+    // error => {
+    //         username = 'daneden';
+    //         reject(error);
+    //     }
     );
 });
 
