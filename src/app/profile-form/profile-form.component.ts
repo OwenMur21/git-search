@@ -10,6 +10,7 @@ import { ProfileService } from '../profiles/profile.service';
 
 })
 export class ProfileFormComponent implements OnInit {
+
   newSearching = new Searching('');
   // @Output() getName = new EventEmitter<Searching>();
 
@@ -18,9 +19,13 @@ export class ProfileFormComponent implements OnInit {
       // this.newSearching = new Searching('');
       console.log(name.value);
       this.profileService.getProfileInfo(name.value);
+      this.repoService.getRepoInfo(name.value);
+
+
+
   }
 
-  constructor(private profileService: ProfileService) { }
+  constructor(private profileService: ProfileService, private repoService: ProfileService) { }
 
   ngOnInit() {
   }
