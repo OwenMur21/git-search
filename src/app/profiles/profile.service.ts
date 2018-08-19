@@ -64,13 +64,10 @@ getRepoInfo(username) {
     clone_url: string;
 }
 this.http.get<ApiResponse>(environment.apiUrl + username + environment.apiRepokey).subscribe(response => {
-  for (let index = 0; index < response.length; index++) {
-    console.log(response[index]);
-    this.repo.name = response[index].name;
-    this.repo.url = response[index].url;
-    this.repo.description = response[index].description;
-    this.repo.homepage = response[index].homepage;
-    this.repo.clone_url = response[index].clone_url;
+
+    console.log(response);
 
 });
+}
+
 }
