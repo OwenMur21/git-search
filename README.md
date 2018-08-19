@@ -1,27 +1,22 @@
-# GithubSearch
-
+# Git-Search
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+https://owenmur21.github.io/git-search/ - The live site
+11/08/2018
 
-## Development server
+## Description
+This is a website wherby you can search for github users by their usernames
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup/Installation Requirements
+No setup is required/installation is required to access this file
 
-## Code scaffolding
+## Technologies Used
+This site was created using angular version 6.1.2 framework. It has incorporated the use of API keys, routing and services.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Known bugs
+There are no known bugs.
 
-## Build
+## Support and Contact details
+Incase of any enquires reach me at:owenmuriithi@gmail.com
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+This project is licensed under the terms of the MIT license. Copyright (c) 2018 Owen Muriithi Mathu
