@@ -7,13 +7,7 @@ import {ProfileService} from './profiles/profile.service';
 import { ProfileFormComponent } from './profile-form/profile-form.component';
 import {FormsModule} from '@angular/forms';
 import { HighlightDirective } from './highlight.directive';
-// import { RepositoriesComponent } from './repositories/repositories.component';
-// import { RouterModule, Routes } from '@angular/router';
-
-// const routes: Routes = [
-//   {path: 'profile', component: ProfileComponent},
-//   {path: 'repositories', component: RepositoriesComponent}
-// ];
+import {RepositoriesComponent} from './repositories/repositories.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +15,7 @@ import { HighlightDirective } from './highlight.directive';
     ProfileComponent,
     ProfileFormComponent,
     HighlightDirective,
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,
