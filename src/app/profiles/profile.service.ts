@@ -13,12 +13,14 @@ export class ProfileService {
 repo: Repo;
 
 user: User;
-items = [];
 private username: string;
+items;
+
+
 
   constructor(private http: HttpClient) {
     this.user = new User (' ', ' ', ' ', ' ', ' ', 0, ' ');
-    this.repo = new Repo (' ', ' ', ' ', ' ', ' ');
+    this.repo = new Repo (' ', ' ', ' ', ' ', '');
 
 
   }
@@ -58,14 +60,14 @@ return promise;
 getRepoInfo(username) {
   interface ApiResponse {
     name: string;
-    url: string;
-    description: string;
     homepage: string;
+    description: string;
+    html_url: string;
     clone_url: string;
 }
 this.http.get<ApiResponse>(environment.apiUrl + username + environment.apiRepokey).subscribe(response => {
 
-    console.log(response);
+    this.items = response;
 
 });
 }
